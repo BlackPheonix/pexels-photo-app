@@ -4,7 +4,7 @@ function PhotoCard(props) {
   return (
     <div >
       <img src={props.img} alt=""  />
-      <p className="photographer-name">Image by: {props.photographer}</p>
+      <p className="photographer-name">{props.photographer}</p>
     </div>
   )
 }
