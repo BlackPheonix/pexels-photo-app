@@ -1,0 +1,83 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 75rem;
+  width: 85%;
+  margin-inline: auto;
+
+}
+
+.photo-app {
+  height: 100vh;
+  margin-top: 6rem;
+
+}
+
+.photo-card-list {
+  width: 100%;
+  display: grid;
+
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+
+}
+
+
+.photo-card-list img {
+  width: 19rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+
+.search-bar {
+  width: 100%;
+
+}
+
+.search-bar  input{
+  width: 100%;
+  padding-block: 1rem;
+  text-indent: 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5rem;
+
+}
+
+.photographer-name {
+  color: rgb(194, 23, 60);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media(min-width: 48em) {
+  .photo-card-list {
+    grid-template-columns: repeat(2, 1fr );
+
+  }
+}
+
+@media(min-width: 62em) {
+  .photo-card-list {
+    grid-template-columns: repeat(3, 1fr );
+
+  }
+}
+
+@media(min-width: 65em) {
+  .photo-card-list {
+    grid-template-columns: repeat(4, 1fr );
+
+  }
+}
