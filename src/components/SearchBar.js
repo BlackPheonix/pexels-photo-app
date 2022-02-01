@@ -27,7 +27,7 @@ function SearchBar() {
     return(
         <div className="search-bar">
             <form onSubmit = {onFormSubmit} >
-                <input type="text" name="photoName" />
+                <input type="text" name="photoName" placeholder="Search for Photos"/>
             </form>
             { isLoading ? <p>Loading Data</p> 
             : error     ? <p>{error}</p> 
